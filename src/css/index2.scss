@@ -1,0 +1,357 @@
+.body {
+  background: url(https://images.wallpaperscraft.com/image/lake_trees_aerial_view_129829_1920x1080.jpg),
+    url(https://wallpapersmug.com/download/1920x1080/bd1964/road-highway-nature-tree-aerial-view.jpg);
+  background-position: center;
+  background-size: auto;
+  min-height: 95vh;
+  min-width: 95vw;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapper > * {
+  padding: 0;
+  flex: 0 1 100%;
+}
+.header {
+  background: rgba(255, 99, 71, 0.521);
+  display: flex;
+  flex-wrap: wrap;
+}
+.header > * {
+  padding: 0;
+  flex: 1 1 auto;
+}
+.logo {
+  order: 1;
+  text-align: left;
+}
+.show_menu {
+  order: 2;
+  display: inline;
+  text-align: right;
+}
+.navigation {
+  order: 3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: rgba(0, 191, 255, 0.486);
+  padding: 0;
+  min-width: 90vw;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.781);
+}
+.navigation a:hover {
+  background: #1565c0;
+}
+.main {
+  text-align: left;
+  background: rgba(0, 191, 255, 0.507);
+}
+.booking {
+  display: flex;
+  flex-flow: row wrap;
+}
+.booking > * {
+  padding: 0;
+}
+.fill {
+  flex: 3 1 20vw;
+}
+.targetContainer {
+  flex: 1 1 20vw;
+  flex-flow: column wrap;
+  font-size: 15px;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+}
+.labelContainer {
+  flex: 1 1 10vw;
+  flex-flow: column wrap;
+  font-size: 15px;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+}
+.labelClass {
+  order: 1;
+  width: 8vw;
+  flex: 1 1 auto;
+}
+.date {
+  order: 2;
+  width: 99%;
+  flex: 1 1 auto;
+}
+.selectTarget {
+  order: 2;
+  min-width: 25vw;
+  flex: 2 1 auto;
+}
+.pick {
+  order: 2;
+  width: 99%;
+  flex: 2 1 auto;
+}
+.searchBtn {
+  flex: 1 1 8vw;
+  padding: 3px;
+  background-color: white;
+}
+.restMain {
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-family: "Dosis";
+  padding: 0px;
+}
+.restMain > * {
+  padding: 1em;
+  flex-grow: 1;
+  text-align: center;
+  background-color: white;
+  border-bottom: solid 1px rgb(168, 168, 168);
+  border-top: solid 1px rgb(168, 168, 168);
+}
+.submitFlightBtn {
+  background-color: white;
+  text-align: center;
+  width: 100vw;
+  border: 1px;
+  padding: 0px;
+}
+.aside {
+  background: rgb(255, 255, 255);
+  flex: 1 0 0;
+  font-family: "Dosis";
+}
+.flightInfoClass {
+  border: 1px solid;
+}
+.flightParametersClass {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+}
+.flightParametersClass > * {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.ticketBorder {
+  border: 1px dotted;
+}
+.ticketClass {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  flex: 1 1 100%;
+  text-align: center;
+}
+.ticketClass > * {
+  flex: 1 1 auto;
+  align-self: auto;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.asideNav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.asideNav > * {
+  padding: 0;
+  flex: 1 1 auto;
+}
+.loginBox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  border: 0px;
+  background: rgba(255, 255, 255, 0.699);
+  opacity: 0.95;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.loginTitle {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  flex-grow: 0;
+}
+.loginForm {
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 5;
+  font-family: "Dosis";
+}
+.loginForm > div {
+  align-self: center;
+  width: 200px;
+  padding: 0px;
+}
+.checkboxInput {
+  width: auto;
+  height: auto;
+}
+.pickExtra {
+  display: flex;
+  justify-content: space-between;
+}
+/*       .loginForm > * {
+        background-color: rgb(250, 250, 250);
+      } */
+.loginFormInput {
+  background-color: rgb(250, 250, 250);
+  width: 200px;
+  height: 30px;
+  align-self: center;
+  margin: 1px;
+  border: 1px solid grey;
+}
+.loginFormBtn {
+  background-color: rgb(250, 250, 250);
+  width: 206px;
+  height: 20px;
+  align-self: center;
+  border: 1px solid grey;
+  margin: 1px;
+  font-weight: bold;
+}
+.loginFormRegBtn {
+  width: 204px;
+  height: 20px;
+  align-self: center;
+  border: 0px;
+  margin: 1px;
+}
+.loginFormCloseBtn {
+  width: 204px;
+  height: 20px;
+  align-self: center;
+  border: 1px;
+  margin: 1px;
+}
+.footer {
+  background: rgba(130, 240, 216, 0.541);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+// Appearance for tablet-size screen or horizontal phone flip.
+@media all and (max-width: 800px) {
+  // location: .body > .wrapper > *
+  .header {
+    flex-direction: row;
+  }
+  .logo {
+    order: 1;
+  }
+  .navigation {
+    order: 3;
+    flex: 1 0 100%;
+    flex-flow: column wrap;
+  }
+  .navigation a {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .fill {
+    flex: 1 1 48vw;
+  }
+  .date {
+    flex: 1 1 48vw;
+    min-width: 25vw;
+  }
+  .pick {
+    flex: 1 1 20vw;
+    min-width: 16vw;
+  }
+  .check-btn {
+    flex: 1 1 2vw;
+  }
+}
+
+// Appearance for phone-size screen (vertical flip).
+@media all and (max-width: 600px) {
+  .wrapper {
+    flex-flow: column wrap;
+  }
+  .aside1 {
+    order: 2;
+  }
+  .aside2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+  // location: .body > .wrapper > .main > .booking > *
+  .fill {
+    flex: 1 1 98vw;
+  }
+  .date {
+    flex: 1 1 48vw;
+  }
+  .pick {
+    flex: 1 1 32vw;
+  }
+  .check-btn {
+    flex: 1 1 6vw;
+  }
+  .searchBtn {
+    min-width: 10vw;
+  }
+}
+
+.pickSeat {
+  fill: orange;
+}
+.pickCheapSeat {
+  fill: green;
+}
+.smallText {
+  font-size: 15px;
+}
+.disappear {
+  display: none;
+}
+.inputLabel {
+  font-size: 14px;
+  text-align: right;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+  background-color: rgba(0, 191, 255, 0.486);
+  color: white;
+  transition: 1s;
+}
+.sticky:hover {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+  background-color: #ffffffab;
+  color: black;
+}

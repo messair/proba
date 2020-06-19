@@ -1,0 +1,6 @@
+{"keys":[ 
+    { "login":"tester", "pwd":"123", "name":"Jan","lastName":"Kowalski","e-mail":"jan.kowalski@domena.com"}, 
+    { "login":"login", "pwd":"pwd", "name":"Artur","lastName":"Wojciechowski","e-mail":"artur.wojciechowski@domena.com"},
+    { "login":"id", "pwd":"haslo", "name":"Marta","lastName":"Nowak","e-mail":"marta.nowak@domena.com"}
+    ]
+}
