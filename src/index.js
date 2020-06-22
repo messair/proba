@@ -1,6 +1,3 @@
-import style from "./css/index.scss"
-import style2 from "./css/index2.scss"
-
 var logged = false; // user logged in or not
 // SHOWS MENU
 document.getElementById("menu").onclick = () => showHide("navigation");
