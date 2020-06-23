@@ -40,6 +40,7 @@ document.getElementById("searchBtn").onclick = () => {
     event.preventDefault();
     ticketCounter = 0;
     flightAvailable = 0;
+    clearTimeout();
     if (airplaneSize != 0) {
         hide(airplaneSize);
         hide("flightParameters");
@@ -83,7 +84,7 @@ document.getElementById("flightInfo").onclick = () => {
     if (blockBtnFunction == 0) {
         showHide("flightParameters");
         if (flightAvailable != 0) {
-            if (logged == true) { timeOut(180000); showHide(airplaneSize); } else show("loginBox");
+            if (logged == true) { timeOut(180000); showHide(airplaneSize); showHide("booking");} else show("loginBox");
         };
     };
     //CREATES PLANE SEATS ARRAY
@@ -145,15 +146,15 @@ document.getElementById("closeTicketBtn").onclick = () => hide("ticketNotificati
 document.getElementById("checkoutBtn").onclick = () => {
     clearTimeout();
     hide(airplaneSize);
-    hide("booking");
     hide("flightInfo");
+    hide("booking");
     hide("checkoutBtn");
+    show("flightParameters");
     show("asideNav");
 };
 document.getElementById("pickSeatsReturnBtn").onclick = () => {
     timeOut(60000);
     show(airplaneSize);
-    show("booking");
     show("flightInfo");
     show("checkoutBtn");
     hide("asideNav");
@@ -226,5 +227,5 @@ var logOut = () => {
 };
 
 var timeOut = (time) => {
-    setTimeout(() => { alert("Your time for seat pick up expired."); window.location.reload(true); }, time);
+    setTimeout(() => { clearTimeout(); alert("Your time for seat pick up expired."); window.location.reload(true); }, time);
 };
