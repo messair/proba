@@ -84,7 +84,7 @@ document.getElementById("flightInfo").onclick = () => {
     if (blockBtnFunction == 0) {
         showHide("flightParameters");
         if (flightAvailable != 0) {
-            if (logged == true) { timeOut(180000); showHide(airplaneSize); showHide("booking");} else show("loginBox");
+            if (logged == true) { timeOut(180000); showHide(airplaneSize); showHide("booking"); } else show("loginBox");
         };
     };
     //CREATES PLANE SEATS ARRAY
