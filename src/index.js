@@ -28,11 +28,11 @@ document.getElementById("logoutBtn").onclick = () => logOut();
 document.getElementById("closeBtn").onclick = () => hide("loginBox");
 //CHECKING AVAILIBLE FLIGHTS
 const flightsData = require("./flightsData.json");
-let flightObj;
-let airplaneSize = 0;
-var ticketCounter;
+let flightObj; //contains inputs
+let airplaneSize = 0; //local, regional or continental
+var ticketCounter; 
 var flightAvailable;
-var connectionInfo;
+var connectionInfo; //contains chosen flight info
 var ticketList;
 var blockBtnFunction;
 //LOADING INPUTS INTO OBJ
@@ -111,7 +111,6 @@ document.getElementById("flightInfo").onclick = () => {
                     hide("ticketNotification");
                     (ticketCounter == flightObj.passengers) ? show("checkoutBtn") : hide("checkoutBtn");
                 } else alert("Your name or last name are to short.");
-                console.log(ticketCounter);
             };
         };
     });
@@ -137,7 +136,6 @@ document.getElementById("flightInfo").onclick = () => {
                     hide("ticketNotification");
                     (ticketCounter == flightObj.passengers) ? show("checkoutBtn") : hide("checkoutBtn");
                 } else alert("Your name or last name are to short.");
-                console.log(ticketCounter);
             };
         };
     });

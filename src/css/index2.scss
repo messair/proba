@@ -1,3 +1,7 @@
+@mixin flexRowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
 .body {
   background: url(https://images.wallpaperscraft.com/image/lake_trees_aerial_view_129829_1920x1080.jpg),
     url(https://wallpapersmug.com/download/1920x1080/bd1964/road-highway-nature-tree-aerial-view.jpg);
@@ -11,8 +15,7 @@
   font-family: "Oswald", sans-serif;
 }
 .wrapper {
-  display: flex;
-  flex-flow: row wrap;
+  @include flexRowWrap;
   font-weight: bold;
   text-align: center;
 }
@@ -42,8 +45,7 @@
 }
 .navigation {
   order: 3;
-  display: flex;
-  flex-flow: row wrap;
+  @include flexRowWrap;
   justify-content: flex-end;
   list-style: none;
   margin: 0;
@@ -65,8 +67,7 @@
   background: rgba(0, 191, 255, 0.507);
 }
 .booking {
-  display: flex;
-  flex-flow: row wrap;
+  @include flexRowWrap;
 }
 .booking > * {
   padding: 0;
@@ -115,8 +116,7 @@
 }
 .restMain {
   background-color: white;
-  display: flex;
-  flex-flow: row wrap;
+  @include flexRowWrap;
   justify-content: space-between;
   font-family: "Dosis";
   padding: 0px;
@@ -160,8 +160,7 @@
   border: 1px dotted;
 }
 .ticketClass {
-  display: flex;
-  flex-flow: row wrap;
+  @include flexRowWrap;
   justify-content: space-evenly;
   flex: 1 1 100%;
   text-align: center;
